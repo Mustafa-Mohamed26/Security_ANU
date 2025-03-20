@@ -8,12 +8,13 @@ items = [
     {'id': 3, 'name': 'Item 3'}
 ]
 
+# Function to generate a unique ID
 def generate_id():
     if items:
         return max(item['id'] for item in items) + 1
     return 1
 
-# CRUD operations
+## CRUD operations
 
 # Get all items
 @app.route('/items', methods=['GET'])

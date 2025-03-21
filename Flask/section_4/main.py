@@ -44,7 +44,7 @@ def create_item():
         'name': request.json['name']
     }
     items.append(item)
-    return jsonify(item), 201
+    return jsonify(item)
 
 # Update an existing item by ID
 @app.route('/items/<int:item_id>', methods=['PUT'])
@@ -67,5 +67,6 @@ def delete_item(item_id):
     items = [item for item in items if item['id'] != item_id]
     return jsonify({'result': True})
 
+# start the application
 if __name__ == '__main__':
     app.run(debug=True)

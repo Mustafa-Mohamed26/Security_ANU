@@ -26,8 +26,8 @@ This repository is dedicated to learning and implementing security best practice
    ```
 2. 🏗️ Create a virtual environment and install dependencies:
    ```bash
-   python3 -m venv venv
-   source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+   python -m venv .venv
+   source venv/bin/activate  # On Windows use `.venv\Scripts\activate`
    pip install -r requirements.txt
    ```
 3. 🔧 Set environment variables for security:
